@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.oostermeyer.nl/schemas/oe/factory/1.0" xmlns:tns="http://www.example.org/factory" elementFormDefault="qualified">
+  <xs:element name="factory">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="interface" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:attribute name="name" type="xs:string" use="required"/>
+            <xs:attribute name="implementation" type="xs:string" use="required"/>
+            <xs:attribute name="isInterface" type="xs:boolean"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="resource" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:attribute name="name" type="xs:string" use="required"/>
+            <xs:attribute name="implementation" type="xs:string" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>    
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+
+<!-- 
+          
+          
+        </element>
+ -->                  
+
+<!-- 
+        <element name="resource">
+          <attribute name="name" type="xs:string" use="required"/>
+          <element name="default" type="xs:string"/>
+        </element>
+    </element>
+
+ -->

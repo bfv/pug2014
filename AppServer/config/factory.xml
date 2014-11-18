@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<factory xmlns="http://www.oostermeyer.nl/schemas/oe/factory/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.oostermeyer.nl/schemas/oe/factory/1.0 factory.xsd ">
+  <interface name="bfv.system.IRestBackendConnector" implementation="pug.generic.BackEndConnector"/>
+  <resource name="speaker" implementation="bfv.rest.RestBusinessEntity" />
+  <resource name="speaker_data" implementation="pug.logic.beSpeaker" />
+</factory>
